@@ -21,8 +21,8 @@ body{
     font-weight: bolder;
 }
 .container{
-    width: 70vmin;
-    height: 75vmin;
+    width: 65vmin;
+    height: 70vmin;
     background-color: #3F3F3B ;
     margin: auto;
     border-radius: 10px;
@@ -49,4 +49,35 @@ body{
 }
 .food{
  background-color: #ff003d;
+}
+
+.controls{
+    display: none;
+    justify-content: space-between;
+    background-color: #3F3F3B ;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.controls i{
+    padding: 20px;
+    cursor: pointer;
+    width: calc(100% / 4);
+}
+
+@media (max-width:800px) {
+    .container{
+        width: 90vmin;
+        height: 115vmin;
+    }
+    .gameScores{
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .controls{
+        display: flex;
+    }
+    .controls i{
+        padding: 15px;
+        font-size: 1rem;
+    }
 }
